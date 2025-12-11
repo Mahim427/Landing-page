@@ -2,70 +2,136 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Gorvak the Ironborn – Master Weaponsmith</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Gorvak the Ironborn – Master Weaponsmith</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <p class="logo">Gorvak's Forge</p>
+  <header>
+    <div class="container">
+      <p class="logo">Gorvak's Forge</p>
 
-            <nav>
-                <ul>
-                    <li><a href="#weapons">Weapons</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#commission">Commission</a></li>
-                </ul>
-            </nav>
+      <nav>
+        <ul>
+          <li><a href="#weapons">Weapons</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#commission">Commission</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Forged in Fire. Tempered in Battle.</h1>
+          <p>Only the worthy may wield the blades of Gorvak Ironborn—legendary smith of the Molten Peaks. Each weapon carries a soul, a curse, or a blessing.</p>
+          <button class="btn">View Arsenal</button>
         </div>
-    </header>
+        <img class="hero-visual" src="./images/Blacksmith.png" alt="Gorvak forging a glowing greatsword before a roaring furnace" width="1664" height="928">
+      </div>
+    </section>
 
-    <main>
-        <section id="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Forged in Fire. Tempered in Battle.</h1>
-                    <p>Only the worthy may wield the blades of Gorvak Ironborn—legendary smith of the Molten Peaks. Each weapon carries a soul, a curse, or a blessing.</p>
-                    <button class="btn">View Arsenal</button>
-                </div>
-                <img class="hero-visual" src="./images/Blacksmith.png" alt="Gorvak forging a glowing greatsword before a roaring furnace" width="1664" height="928">
-            </div>
-        </section>
+    <section id="weapons">
+      <div class="container">
+        <h2>Legendary Weapons of the Ironborn</h2>
 
-        <!-- <section id="weapons">
-            <h2>Legendary Weapons of the Ironborn</h2>
+        <div class="item-list">
+          <div class="item">
+            <img src="./images/Soulrend.png" alt="Dark longsword with glowing amber runes and elderwood hilt" width="1024" height="1024">
+            <h3>Soulrend</h3>
+            <p><span>(Longsword)</span><br>This blade does not cut flesh—it severs spirit. With every strike, it drains resolve, memory, and will. Those struck may survive the wound, but often forget who they were before the blade passed through them.</p>
+          </div>
+          <div class="item">
+            <img src="./images/Soulward.png" alt="Mystical tower shield with glowing amber boss and rune etchings" width="1024" height="1024">
+            <h3>Soulward</h3>
+            <p><span>(Tower Shield)</span><br>More than protection, Soulward is a covenant of endurance. It absorbs not just force, but despair, fear, and curses—holding them at bay so the wielder may stand when all others break. It remembers every burden it has borne, and answers with quiet strength.</p>
+          </div>
+          <div class="item">
+            <img src="./images/Soulpiercer.png" alt="Long spear with amber-glowing runes and obsidian spearhead" width="1024" height="1024">
+            <h3>Soulpiercer</h3>
+            <p><span>(Long Spear)</span><br>It halts fate itself. A true strike doesn’t wound—it anchors the soul, freezing foes between breath and death. Warriors impaled could neither flee nor fall, only watch their end unfold. Even battle’s echoes recoil from its shadow.</p>
+          </div>
+          <div class="item">
+            <img src="./images/Soulbrand.png" alt="Fantasy mage staff with glowing amber orb and iron runes" width="1024" height="1024">
+            <h3>Soulbrand</h3>
+            <p><span>(Mage’s Staff)</span><br>It channels raw ethereal power through a captured fragment of a dying star. Spells cast through Soulbrand do not merely burn—they unravel the threads that bind soul to body, leaving silence where magic once roared.</p>
+          </div>
+          <div class="item">
+            <img src="./images/Soulstrike.png" alt="Arcane recurve bow with amber-lit string and obsidian tips" width="1024" height="1024">
+            <h3>Soulstrike</h3>
+            <p><span>(Recurve Bow)</span><br>An arrow loosed from Soulstrike always finds the truth hidden behind armor, distance, or deception. Its shots carry a shard of soulfire that lingers long after impact, haunting the target until they face what they’ve tried to flee—even if it’s themselves.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="item-list">
-                <div class="item">
-                    <div class="item-img" style="background-image: url('frostreaver.jpg');"></div>
-                    <p><strong>Frostreaver</strong><br>Glowing blue runes channel ice from the blade’s core. Slows enemies on strike.</p>
-                </div>
-                <div class="item">
-                    <div class="item-img" style="background-image: url('ashfang.jpg');"></div>
-                    <p><strong>Ashfang</strong><br>Obsidian spear forged in dragon ash. Drains stamina with every thrust.</p>
-                </div>
-                <div class="item">
-                    <div class="item-img" style="background-image: url('whisperwind.jpg');"></div>
-                    <p><strong>Whisperwind</strong><br>Bone-and-iron bow that never misses in the hands of the stealthy.</p>
-                </div>
-                <div class="item">
-                    <div class="item-img" style="background-image: url('wolfward.jpg');"></div>
-                    <p><strong>Wolfward</strong><br>Unbreakable shield bearing the snarl of the Iron Wolf. Deflects magic and morale.</p>
-                </div>
-            </div>
-        </section>
+    <!-- <section id="about">
+      <div class="container">
+        <h2>The Forge of Legends</h2>
+        <p>
+          Gorvak Ironborn was born in the ash-choked valleys beneath the Molten Peaks, where rivers run with liquid ore and the wind carries the song of hammers.
+          At age nine, he quenched his first blade in dragon’s breath; by sixteen, he reforged the shattered <em>Sword of Kings</em> after the War of Shattered Crowns.
+        </p>
+        <p>
+          For fifty years, Gorvak has accepted only those who prove their worth—through trial, tale, or tear. He does not sell weapons. He bestows legacies.
+          Every hammer strike is a vow. Every rune, a warning. And every weapon bears a soul: some benevolent, some vengeful, all unforgettable.
+        </p>
+        <p>
+          His forge lies beyond the Ashen Pass—guarded by stone golems and silence. Few find it. Fewer leave unchanged.
+        </p>
+      </div>
+    </section> -->
 
-        <section id="about">
-            <p class="quote-text">“He didn’t just make weapons—he made legacies. I carried Frostreaver through three wars, and it never failed me.”</p>
-            <h2>—Captain Raelen, Knight of the Shattered Crown</h2>
-        </section>
+    <!-- <section id="testimonials">
+      <div class="container">
+        <h2>Voices of the Worthy</h2>
 
-        <section id="commission">
+        <div class="testimonial-list">
+          <div class="testimonial-card">
+            <p class="quote-text">
+              “He didn’t just make weapons—he made legacies. I stood before his forge with nothing but a broken oath and a scarred shield.
+              He looked into my eyes, then into my past, and said, ‘You’re ready.’ Three wars later, Soulrend still sings when battle nears—and it remembers my name.”
+            </p>
+            <cite>—Captain Raelen, Knight of the Shattered Crown</cite>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote-text">
+              “I came to the Ashen Pass seeking power. Gorvak offered me something far heavier: consequence.
+              Soulbrand doesn’t obey—it *chooses*. When I tried to cast a spell of domination, the staff went cold in my hands.
+              But in the Siege of Black Hollow, when I stood alone against the Hollow King, it blazed like a fallen star.
+              Gorvak didn’t give me a tool. He gave me a judge—and a guardian.”
+            </p>
+            <cite>—Elira Voss, Archmage of the Silent Spire</cite>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote-text">
+              “After the Crown shattered, I lost everything—my king, my brother, my name. I wandered for years until I found the forge in the Molten Peaks.
+              Gorvak said nothing. Just placed Soulward in my hands and walked away. That shield didn’t just stop arrows—it held back despair.
+              When the Shadow Horde broke our lines at Dawn’s End, I stood. Not because I was strong, but because the shield remembered what I’d forgotten:
+              that some things are worth holding, even when the world burns.”
+            </p>
+            <cite>—Borin Stonehand, Last Sentinel of Varethis</cite>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section id="commission">
             <div>
                 <h2>Commission Your Weapon</h2>
                 <p>Worthy heroes may request a custom blade. Prove your valor, and Gorvak may take your order.</p>
@@ -73,9 +139,9 @@
 
             <button class="btn">Request Audience</button>
         </section> -->
-    </main>
+  </main>
 
-    <!-- <footer>
+  <!-- <footer>
         <p>© 2025 Gorvak’s Forge – All blades guaranteed to cleave… or your soul back.</p>
     </footer> -->
 

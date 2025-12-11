@@ -7,20 +7,25 @@
     --clr-btn: #3882f6;
     --clr-btn-hover: #0b64f4;
 
-    --font: 'Cinzel', serif;
+    /* --font: Roboto, sans-serif; */
+    --font: "IM Fell English", serif;
+    --header-font: 'Cinzel', serif;
 
     /*Font Weight*/
     --fw-light: 300;
     --fw-black: 900;
 
     /* Font Size */
-    --fs-logo: 24px;
-    --fs-h1: 48px;
-    --fs-h2: 36px;
-    --fs-secondary: 18px;
+    --fs-logo: 26px;
+    --fs-h1: 50px;
+    --fs-h2: 38px;
+    --fs-h3: 28px;
+    --fs-secondary: 20px;
+    --fs-regular: 18px;
 
     /* Section Width */
     --sec-width: 1300px;
+    --sec-pad-top-bot: 60px;
 }
 
 
@@ -61,6 +66,27 @@ ul {
 /* Styles */
 body {
     font-family: var(--font);
+    font-size: var(--fs-regular);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    color: var(--clr-title-200);
+    font-weight: var(--fw-black);
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    color: var(--clr-title-800);
+    font-weight: var(--fw-black);
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    color: var(--clr-title-800);
+    font-weight: var(--fw-black);
 }
 
 .container {
@@ -123,9 +149,11 @@ nav a:hover {
 
 
 /* Main */
+
+/* Hero */
 #hero {
     background-color: var(--clr-bg);
-    padding: 60px 0;
+    padding: calc(var(--sec-pad-top-bot) + 20px) 0;
 }
 
 #hero .container {
@@ -140,12 +168,11 @@ nav a:hover {
     font-size: var(--fs-secondary);
 }
 
-.hero-content h1 {
-    font-size: var(--fs-h1);
+/* .hero-content h1 {
     color: var(--clr-title-200);
     font-weight: var(--fw-black);
     margin-bottom: 16px;
-}
+} */
 
 .hero-content p {
     margin-bottom: 20px;
@@ -156,3 +183,50 @@ nav a:hover {
     min-width: 0;
     height: auto;
 }
+
+
+/* Weapons */
+#weapons {
+    text-align: center;
+    padding: var(--sec-pad-top-bot) 0;
+}
+
+/* #weapons h2 {
+    color: var(--clr-title-800);
+    font-weight: var(--fw-black);
+    margin-bottom: 30px;
+} */
+
+.item-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item {
+    flex: 1 1 30%;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.item img {
+    margin-bottom: 20px;
+}
+
+.item p {
+    font-size: var(--fs-regular);
+}
+
+.item p span {
+    font-size: var(--fs-secondary);
+}
+
+
+/* About */
+/* #about {
+    text-align: center;
+    padding: var(--sec-pad-top-bot) 0;
+    background-color: var(--clr-text-500);
+    font-size: var(--fs-secondary);
+} */
